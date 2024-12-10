@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24201012417丁鑫洋丁式拼多多主页</title>
+    <link rel="stylesheet" href="./CSS/WORK.CSS">
+    <!-- 第一步引入inconfont.js -->
+    <script src="./font/iconfont.js"></script>
+    <!-- 引入通用css -->
+    <style>
+        .icon {
+          width: 1em;
+          height: 1em;
+          vertical-align: -0.15em;
+          fill: currentColor;
+          overflow: hidden;
+        }
+        .bnav{position: fixed;
+        left: 0;
+        bottom: 0;
+        background-color: #fff;
+        z-index: 9;
+        width: 100%;
+        }
+        body{margin-bottom: 50px;}
+        .bnav>ul{display: flex;}
+        .bnav li{width: 20%;
+        text-align: center;}
+        .bnav p{
+        color: #000;
+        line-height: 26px;
+        letter-spacing: 3px;
+        font-size: 14px;
+        }
+    /* 以下是中部商品 */
+    /* 父元素ul变成弹性盒子 */
+        .slist{
+        display: flex;
+        flex-wrap: wrap;
+        /* 12.10 */
+        background-color: #d4d4d4;
+    /* 换行wrap */
+    /* 以下为新加 */
+       margin-top: 3.5rem;
+       margin-bottom: 2.3rem;
+        }
+        .slist li{
+    /* 一行显示2个子项目 */
+       width: 48%;
+       margin-left: 1px;
+       flex-grow: 1;
+       background-color: #fff;
+       /* 12.10 */
+       border-radius:   5px;
+       margin: 3px;
+
+    /* 当子项目宽度和小于100%时，用flexgrow填充剩余空间 */
+        }
+        .slist img{
+        width: 100%;
+        /* 12.10 */
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        }
+    /* 让最左边的项目和边框没有距离 */
+        .slist li:first-child{
+        margin-left: 0;
+        }
+        .slist p{
+        font-size: .5rem;
+        text-align: center;
+        line-height: .65rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    /* 文字溢出省略为省略号 */
+        white-space: nowrap;
+    /* 文字不换行 */                
+        }
+
+    /* 以上是中部商品栏 */
+    /* 以下是导航栏 */
+        div.daohang  {
+        position: relative;
+        max-width: 100%;
+        height: 50%;
+        width: 100%;
+        overflow: hidden;
+        }
+        div.daohang ul.daohangkuai {
+        position: relative;
+        height: 100%;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 0 .14rem;}
+        div.daohang .xiangmu:first-child {
+        margin-left: .20rem;
+        }
+        .xiangmu{display: inline;
+        font-size: 16px;
+        margin-right: .6rem;
+        color:#444444;
+        height: .42rem;
+         margin-top: .42rem;
+        }
+  
+    /* 以上是导航栏 */
+    /* 以下是搜索栏 */
+        body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        }
+
+
+        .sousuokuang {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 20%;
+        }
+        .sousuoshuru {
+        width: 90%;
+        height: 50%;
+        padding: 0px;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        text-align: center;
+        flex: 1;
+        background-color: #EDEDED;
+        margin-top: 0.2rem;
+        }
+        nav.sousuo{
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: #fff;
+        z-index: 10;
+        width: 100%;
+        height:3.5rem;
+        }
+        svg.sousuotu1{
+        width: 2.5%;
+        }
+        svg.sousuotu2{
+        width: 2.5%;
+        }
+
+    /* 以上是搜索栏 */
+    /* 以下是价格栏 */
+        p.price{
+        text-align: left;
+        font-size: .8rem;
+        color: rgb(249, 6, 6);
+        width: 40%;
+        }
+    /* 以上是价格栏 */
+    /* 以下是价格栏灰色 */
+        .huise{width: 40%;
+        float: right;
+        font-size: .5rem;
+        margin-right: .5rem;
+        color:rgb(147, 143, 143);
+        }
+    /* 以上是价格栏灰色 */
+    </style>
+</head>
+<body>
+    <!-- 最上面的搜索栏开始   -->
+        <nav class="sousuo"> 
+        <svg class="sousuotu1" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="0.5rem" height="0.5rem"style="float;" >
+            <path d="M1011.061 963.072L841.394 793.406a34.062 34.062 0 0 0-4.603-3.86c72.472-83.395 116.343-192.31 116.343-311.479C953.133 215.681 740.453 3 478.067 3 215.681 3 3 215.681 3 478.067c0 262.386 212.681 475.067 475.067 475.067 119.168 0 228.084-43.87 311.479-116.343a34.132 34.132 0 0 0 3.86 4.604l169.667 169.667c13.252 13.252 34.737 13.252 47.989 0 13.251-13.253 13.251-34.738-0.001-47.99z m-532.994-77.805c-224.904 0-407.2-182.296-407.2-407.2s182.296-407.2 407.2-407.2 407.2 182.296 407.2 407.2-182.296 407.2-407.2 407.2z" fill="#9c9c9c">
+            </path>
+        </svg>
+    <!-- 上部两个图标在pdd找到的 -->
+         <input type="text" name="q" placeholder="投资金条100g" class="sousuoshuru"> 
+         <svg class="sousuotu2" viewBox="0.3109999895095825 64.27301788330078 1080 941" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" width="0.5rem" height="0.5rem"><path d="M345.701 268.948c-21.195 0-38.377-17.182-38.377-38.377s17.182-38.377 38.377-38.377 38.377 17.182 38.377 38.377-17.182 38.377-38.377 38.377zM512 729.468c98.909 0 179.091-80.182 179.091-179.091S610.909 371.286 512 371.286s-179.091 80.182-179.091 179.091S413.091 729.468 512 729.468z m0 51.169c-127.169 0-230.26-103.091-230.26-230.26S384.831 320.117 512 320.117s230.26 103.091 230.26 230.26S639.169 780.637 512 780.637z m351.907-588.56l76.204 28.162c50.227 18.562 83.578 66.443 83.578 119.99v440.406c0 98.909-80.182 179.091-179.091 179.091H179.402C80.493 959.726 0.311 879.544 0.311 780.635V340.23c0-53.547 33.351-101.428 83.578-119.99l76.204-28.162 33.732-80.664c11.94-28.553 39.862-47.141 70.811-47.141h494.728c30.949 0 58.871 18.588 70.811 47.141l33.732 80.663z m-762.28 76.159C71.491 279.373 51.48 308.102 51.48 340.23v440.406c0 70.649 57.273 127.922 127.922 127.922h665.195c70.649 0 127.922-57.273 127.922-127.922V340.23c0-32.128-20.011-60.857-50.147-71.994l-86.645-32.021a25.589 25.589 0 0 1-14.735-14.127l-38.027-90.933a25.584 25.584 0 0 0-23.604-15.714H264.636a25.585 25.585 0 0 0-23.604 15.714l-38.026 90.933a25.586 25.586 0 0 1-14.735 14.127l-86.644 32.021z" fill="#9c9c9c">
+         </path></svg>
+        <div class="daohang">
+            <ul class="daohangkuai">
+                <li class="xiangmu" data-no="1">推荐</li>
+                <li class="xiangmu" data-no="2">手机</li>
+                <li class="xiangmu" data-no="3">百货</li>
+                <li class="xiangmu" data-no="4">食品</li>
+                <li class="xiangmu" data-no="5">女装</li>
+                <li class="xiangmu" data-no="6">箱包</li>
+                <li class="xiangmu" data-no="7">医药</li>
+                <li class="xiangmu" data-no="8">男装</li>
+                <li class="xiangmu" data-no="9">美妆</li>
+                <li class="xiangmu" data-no="10">车品</li>
+               
+            </ul>
+        </div>
+        </nav>
+    <!-- 最上面的搜索栏结束 -->
+    <!-- nav导航栏 -->
+        <nav class="bnav">
+<ul>
+    <li>
+        <a href="./index.html">
+            <!-- 放置字体图标 -->
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-shouye1"></use>
+              </svg>
+             <p>首页</p>
+        </a>
+    </li>
+    <li>
+        <a href="./duoduoshipin.html">
+            <!-- 放置字体图标 -->
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-a-duoduoshipintab"></use>
+              </svg>
+             <p> 多多视频</p>
+        </a>
+    </li>
+    <li>
+        <a href="./index.html">
+            <!-- 放置字体图标 -->
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-shuang12"></use>
+              </svg>
+             <p>点我领券</p>
+        </a>
+    </li>
+    <li>
+        <a href="./liaotian.html">
+            <!-- 放置字体图标 -->
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-duihua"></use>
+              </svg>
+             <p>聊天</p>
+        </a>
+    </li>
+    <li>
+        <a href="./me.html">
+            <!-- 放置字体图标 -->
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-gerenzhongxin-jihuo_"></use>
+              </svg>
+             <p>个人中心</p>
+        </a>
+    </li>
+</ul>
+</nav> 
+<!-- nav导航栏 -->
+    <ul class="slist">
+    <li>
+    <a href="">
+        <img src="./images/11.webp">
+    </a>
+    <p>全套关东煮超超超好吃丁鑫洋特制无敌关东煮</p>
+    <p class="price">￥36.5</p>
+    <p class="huise">总售1万+件</p>
+ 
+    </li>
+    <li>
+    <a href="">
+        <img src="./images/12.webp">
+    </a>
+    <p>纳米碳纤维超级喷漆无敌加速回转水凝膜</p>
+    <p class="price">￥36.5</p>
+    <p class="huise">总售1万+件</p>
+        
+    </li>
+    <li>
+    <a href="">
+        <img src="./images/13.webp">
+    </a>
+    <p>用了金坷垃一袋能顶两袋子撒谁说对了就给他</p>
+    <p class="price">￥36.5</p>
+    <p class="huise">总售1万+件</p>
+    </li>
+    <li>
+    <a href="">
+        <img src="./images/14.webp">
+    </a>
+    <p>军工航天品质坚如磐石烧坏了我死</p>
+    <p class="price">￥36.5</p>
+    <p class="huise">总售1万+件</p>
+    </li>
+    <li>
+    <a href="">
+        <img src="./images/15.webp">
+    </a>
+    <p>超级无敌地漏防反味别用嘴上憋死</p>
+    <p class="price">￥36.5</p>
+    <p class="huise">总售1万+件</p>
+    </li>
+    <li>
+     <a href="">
+        <img src="./images/16.webp">
+    </a>
+    <p>白貂皮超级无敌保暖无惧大连风吹</p>
+    <p class="price">￥36.5</p>
+    <p class="huise">总售1万+件</p>
+    </li>
+    <li>
+    <a href="">
+        <img src="./images/17.webp">
+    </a>
+    <p>离身爆炸车钥匙扣人钥分离十米爆炸</p>
+    <p class="price">￥36.5</p>
+    <p class="huise">总售1万+件</p>
+    </li>
+    <li>
+    <a href="">
+        <img src="./images/18.webp">
+        </a>
+    <p>垂耳怪叫驴停止乱叫专用磨牙棒让驴闭嘴</p>
+    <p class="price">￥36.5</p>
+    <p class="huise">总售1万+件</p>
+    </li>
+    </ul>  
+
+   
+</body>
+</html>

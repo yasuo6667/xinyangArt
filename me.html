@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24201012417丁鑫洋个人中心</title>
+    <link rel="stylesheet" href="./CSS/video.css">
+    <script src="./font/iconfont.js"></script>
+    <!-- 引入图标css -->
+    <style>
+        /* 下导航通用以下 */
+        html {
+        font-size: 5.6vw;
+        }
+        .icon {
+        width: 1em;
+        height: 1em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+        }
+        .bnav{position: fixed;
+        left: 0;
+        bottom: 0;
+        background-color: #fff;
+        z-index: 9;
+        width: 100%;
+        }
+        body{
+        margin-bottom: 50px;
+        }
+        .bnav>ul{
+        display: flex;
+        list-style-type: none;
+        }
+        .bnav li{
+        width: 20%;
+        text-align: center;
+        }
+        .bnav p{
+        color: #000;
+        line-height: 26px;
+        letter-spacing: 3px;
+        font-size: 14px;
+        }
+        a {
+        color: inherit; /* 取消颜色 */
+        text-decoration: none; /* 取消下划线 */
+        }
+    /* 下导航通用以下 */
+    /* 登录框 */
+    
+    div.loginside input{
+    width: 90%;
+    height: 2rem;
+    color: #767676;
+    position: relative;
+    padding-left: .12rem;
+    display: inline;
+    align-items: center;
+    padding-top: .15rem;
+    }
+    div.loginside img{
+    height: 2rem;
+    padding-top: 1rem;
+    margin-top: .2rem;
+    }
+    /* 登录框以上 */
+    /* 登录和返回按钮（查找） */
+    .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+        }
+
+        .login-button {
+            background-color: #ff0000; /* 拼多多常用的红色 */
+            color: white;
+            border-radius: 5px;
+            margin-bottom: .5rem; /* 两个按钮之间的间距 */
+            width: 100%;
+        }
+
+        .login-button:hover {
+            background-color: #ff0000; /* 鼠标悬停时颜色变深 */
+        }
+
+        .return-button {
+            background-color: #cccccc; /* 灰色背景 */
+            color: rgb(255, 0, 0);
+            border-radius: 5px ;
+            border: 2px solid rgb(255, 0, 0);
+            width: 100%;
+        }
+
+        .return-button:hover {
+            background-color: #bbbbbb; /* 鼠标悬停时颜色变深 */
+        }
+        div.regandback{
+            padding: .3rem .2rem 0;
+            
+        }
+    /* 登录和返回按钮（查找） */
+    </style>
+</head>
+<body>
+    
+    <!-- nav导航栏 -->
+    <nav class="bnav">
+    <ul>
+        <li>
+            <a href="./index.html">
+                <!-- 放置字体图标 -->
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-shouye1"></use>
+                  </svg>
+                 <p>首页</p>
+            </a>
+        </li>
+        <li>
+            <a href="./duoduoshipin.html">
+                <!-- 放置字体图标 -->
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-a-duoduoshipintab"></use>
+                  </svg>
+                 <p> 多多视频</p>
+            </a>
+        </li>
+        <li>
+            <a href="./11.22-3.html">
+                <!-- 放置字体图标 -->
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-shuang12"></use>
+                  </svg>
+                 <p>点我领券</p>
+            </a>
+        </li>
+        <li>
+            <a href="./liaotian.html">
+                <!-- 放置字体图标 -->
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-duihua"></use>
+                  </svg>
+                 <p>聊天</p>
+            </a>
+        </li>
+        <li>
+            <a href="./me.html">
+                <!-- 放置字体图标 -->
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-gerenzhongxin-jihuo_"></use>
+                  </svg>
+                 <p>个人中心</p>
+            </a>
+        </li>
+    </ul>
+    </nav> <!-- nav导航栏 -->
+<div class="loginside">
+    <form action="" class="login">
+    <div class="input">
+        <img src="./images/phone(1).png" alt="">
+        <input type="tel" id="mobile" placeholder="手机号码" value="">
+    </div>
+    <div class="input">
+        <img src="./images/phone(2).png" alt="">
+        <input type="tel" id="code" placeholder="验证码">
+    </div>
+    <div class="regandback">
+        <form action="./index.html" method="get">
+            <button type="submit" class="button login-button">登录</button>
+        </form>
+        <form action="./index.html" method="get">
+            <button type="submit" class="button return-button">返回</button>
+        </form>
+    </div>
+</form>
+</div>
