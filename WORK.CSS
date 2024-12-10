@@ -1,0 +1,17 @@
+h1,h2,h3,h4,h5,h6,ul,p,body,form,dl,dd,dt{
+padding: 0;
+margin: 0;}
+ul{list-style: none;}
+a{text-decoration: none;
+color: black;}
+a:visited{color: black;}
+img{border: none;
+display: block;}
+/* 移动端特有属性 */
+body{min-width: 320px;
+margin: 0 auto;
+overflow-x: hidden;
+/* 当设计不合理时，设置x轴溢出隐藏 */
+}
+html{font-size: 5.6vw;
+}
